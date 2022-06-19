@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    background-color: #eee;
+}
+
+// COMPONENTS
+
+.link {
+    text-decoration: none;
+    position: relative;
+    color: black;
+    border-bottom: 2px solid #a6185f;
+    z-index: 0;
+    transition: color .3s;
+}
+.link::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    height: 0px;
+    width: 100%;
+    background-color: #a6185f;
+    transition: height .3s;
+}
+.link:hover::before {
+    height: 100%;
+}
+.link:hover {
+    color: white;
+}
+
+// NOT FOUND
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #ddd;
+    &__text {
+        font-size: 15rem;
+        font-weight: bold;
+    }
+    &__link {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        padding: 1em;
+        text-align: center;
+    }
+}

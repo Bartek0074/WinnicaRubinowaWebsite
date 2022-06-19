@@ -1,0 +1,74 @@
+@media ( min-width: 992px) {
+    html {
+        scroll-padding-top: 75px;
+    }
+
+    // COMPONENTS
+
+    .section-heading {
+        font-size: 4.2rem;
+    }
+    .section-text {
+        font-size: 2rem;
+    }
+    .section-padding {
+        padding: 6em 2em;
+    }
+    .nav-desktop {
+        display: block
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .burger-btn-bgc {
+        display: none;
+    }
+
+    // HEADER
+
+    header {
+        .header {
+            img {
+                width: 500px;
+            }
+            &__heading {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    // QUOTE
+
+    .quote {
+        &__info {
+            &-text {
+                font-size: 2.4rem;
+            }
+            &-author {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    // GALLERY
+
+    .gallery {
+        &__box {
+            gap: 1em;
+        }
+    }
+
+    // CATALOG
+
+    .catalog {
+        &__box {
+            margin-top: 6em;
+            gap: 3em;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            &-card {
+                height: 600px;
+            }
+        }
+    }
+}

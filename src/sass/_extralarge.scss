@@ -1,0 +1,28 @@
+@media ( min-width: 1400px) {
+
+    // HEADER
+
+    header {
+        .header {
+            img {
+                width: 560px;
+            }
+            &__heading {
+                font-size: 5.6rem;
+            }
+        }
+    }
+
+    // QOUTE
+
+    .quote {
+        &__info {
+            &-text {
+                font-size: 2.6rem;
+            }
+            &-author {
+                font-size: 2.2rem;
+            }
+        }
+    }
+}

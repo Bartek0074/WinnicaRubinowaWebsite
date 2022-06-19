@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winnica Rubinowa</title>
+    <link rel="shortcut icon" href="./dist/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44f399a034.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body class="body--hidden">
+    <!-- AGE VERIFICATION -->
+    <div id="consent-popup" class="consent-popup consent-popup--hidden">
+        <div class="consent-popup__box">
+            <p class="consent-popup__box-adult-question">Czy jesteś pełnoletni/a?</p>
+            <p class="consent-popup__box-adult-info">Aby wejść na naszą stronę musisz mieć ukończone 18&nbsp;lat.</p>
+            <div class="consent-popup__box-links">
+                <a class="consent-popup__box-link-age consent-popup__box-link-age-accept" id="accept" href="#">Tak</a>
+                <a class="consent-popup__box-link-age consent-popup__box-link-age-deny" href="/notallowed.html">Nie</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <button class="burger-btn"><i class="fa-solid fa-bars"></i></button>
+<nav class="nav-mobile">
+    <button class="burger-btn--close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="nav-mobile__items">
+        <a href="#" class="nav__item nav-mobile__item nav-mobile__item--active">home</a>
+        <a href="#about" class="nav__item nav-mobile__item">o nas</a>
+        <a href="#gallery" class="nav__item nav-mobile__item">galeria</a>
+        <a href="#catalog" class="nav__item nav-mobile__item">katalog win</a>
+        <a href="#contact" class="nav__item nav-mobile__item">kontakt</a>
+    </div>
+</nav>
+<nav class="nav-desktop">
+    <div class="nav-desktop__items wrapper">
+        <a href="#" class="nav__item nav-desktop__item nav-desktop__item--active">home</a>
+        <a href="#about" class="nav__item nav-desktop__item">o nas</a>
+        <a href="#gallery" class="nav__item nav-desktop__item">galeria</a>
+        <a href="#catalog" class="nav__item nav-desktop__item">katalog win</a>
+        <a href="#contact" class="nav__item nav-desktop__item">kontakt</a>
+    </div>
+</nav>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="header section wrapper">
+            <img src="./dist/img/logo-small.png" alt="Logo Winnicy Rubinowej">
+            <h1 class="header__heading">winnica rubinowa</h1>
+        </div>
+    </header>
+    
+    <main>
+        <section class="quote section section-padding section-purple">
+            <div class="white-block white-block-right"></div>
+            <div class="white-block white-block-left"></div>
+            <div class="wrapper">
+                <div class="quote__info">
+                    <p class="quote__info-text">"Wino czyni każdy posiłek uroczystością, każdy stół wspanialszym, każdy dzień bardziej udanym."</p>
+                    <p class="quote__info-author">Andre L. Simon</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="welcome" class='welcome section section-padding'>
+            <div class="wrapper ">
+                <h2 class="section-heading ">Witamy</h2>
+                <p class="section-text">Szanowni Państwo, witamy serdecznie na naszej stronie internetowej. Pragniemy podzielić się naszymi zainteresowaniami, jakimi stały się niespodziewanie uprawa winorośli i produkcja wina. Winnica dla nas to przede wszystkim sposób spędzania
+                    wolnego czasu, mnóstwo zabawy i ogromna satysfakcja z wykonywanej pracy.</p>
+            </div>
+        </section>
+
+        <section id="about" class="about section section-padding section-purple">
+            <div class="white-block white-block-right"></div>
+            <div class="white-block white-block-left"></div>
+            <div class="wrapper">
+                <h2 class="section-heading">O nas</h2>
+                <div class="about__item">
+                    <div class="about__item-img-box">
+                        <img src="./dist/img/about1.jpg" alt="Winogrona na krzewie" class="about__item-img">
+                    </div>
+                    <div class="about__item-info">
+                        <h2 class="about__item-info-heading">Kim jesteśmy?</h2>
+                        <p class="about__item-info-text">Jesteśmy małą, rodzinną, trzypokoleniową firmą winiarską, położoną na malowniczych terenach Małopolskiego Przełomu Wisły. Praca w winnicy i winiarni sprawia nam przede wszystkim przyjemność i radość, płynącą ze spędzania czasu
+                            w rodzinnym gronie. Rozwijamy się z każdym rokiem, myślimy o przyszłości i nie wyobrażamy sobie robienia czegoś innego.
+                        </p>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <div class="about__item-img-box about__item-img-box--right">
+                        <img src="./dist/img/about2.jpg" alt="Droga polna" class="about__item-img">
+                    </div>
+                        <div class="about__item-info">
+                        <h2 class="about__item-info-heading">Gdzie nas znaleźć?</h2>
+                        <p class="about__item-info-text">Nasza winnica położona jest w Ożarowie Pierwszym, niedaleko Opola Lubelskiego. Usytuowana jest w sąsiedztwie malowniczego regionu Małopolskiego Przełomu Wisły, który obejmuje 70-kilometrowy odcinek doliny Wisły od Zawichostu po
+                            Puławy. Dolina ma stosunkowo wąski kształt i dość strome zbocza, zbudowane głównie ze skał węglanowych (opoki i wapienie). Takie warunki geologiczne oraz fakt, że Wyżyna Lubelska jest regionem o największej ilości dni słonecznych
+                            w roku, umożliwiają uprawę winorośli.
+                        </p>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <div class="about__item-img-box">
+                        <img src="./dist/img/about3.jpg" alt="Otwarta książka z okularami" class="about__item-img">
+                    </div>
+                        <div class="about__item-info">
+                        <h2 class="about__item-info-heading">Krótka historia</h2>
+                        <p class="about__item-info-text">Uprawą winorośli oraz produkcją wina zainteresował nas nasz tata Krzysztof Morek, który już w 1989 r. sprowadził pierwsze krzaki - Skarb Panonii. Nasi rodzice, z zawodu ogrodnicy, hobbistycznie poszerzali nasze zbiory przez lata.
+                            W 2009 r. tata oficjalnie zarejestrował naszą winnicę w Stowarzyszeniu Winiarzy Małopolskiego Przełomu Wisły. Od tego czasu na dobre zaczęliśmy zajmować się tematyką winiarską. Metodą prób i błędów doskonaliliśmy techniki produkcji,
+                            aż doszliśmy do momentu, w którym jesteśmy teraz. Rok 2021 okazał się przełomowy. Uzyskaliśmy wszelkie pozwolenia uprawniające nas do obrotu winem. Obecnie posiadamy profesjonalną infrastrukturę winiarską oraz około 2,5 ha
+                            powierzchni winorośli przerobowej i deserowej.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery section section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">Galeria</h2>
+                <div class="gallery__box">
+                    <div class="gallery__box-item gallery__box-item--first">
+                        <div class="gallery__box-item-img gallery__box-item-img--first" title="Traktor w winnicy"></div>
+                    </div>
+                    <div class="gallery__box-item gallery__box-item--second">
+                        <div class="gallery__box-item-img gallery__box-item-img--second" title="Białe winogrono"></div>
+                    </div>
+                    <div class="gallery__box-item gallery__box-item--third">
+                        <div class="gallery__box-item-img gallery__box-item-img--third" title="Fioletowe winogrono"></div>
+                    </div>
+                    <div class="gallery__box-item gallery__box-item--fourth">
+                        <div class="gallery__box-item-img gallery__box-item-img--fourth" title="Stoisko z winem"></div>
+                    </div>
+                    <div class="gallery__box-item gallery__box-item--fifth">
+                        <div class="gallery__box-item-img gallery__box-item-img--fifth" title="Traktor ze skrzyniami wypełnionymi białym winogronem"></div>
+                    </div>
+                    <div class="gallery__box-item gallery__box-item--sixth">
+                        <div class="gallery__box-item-img gallery__box-item-img--sixth" title="Wina na tle plastrów drewna"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="catalog" class="catalog section section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">katalog win</h2>
+                <p class="section-text">Zapraszamy do zapoznania się z naszą ofertą. W celu zakupu naszych win zapraszamy do odwiedzin bądź
+                <a class="link" href="#contact"><strong>kontaktu</strong></a>.
+                <div class="catalog__box">
+                    <div class="catalog__box-card" onclick="void(0)">
+                        <div class="catalog__box-card-img">
+                            <h3 class="catalog__box-card-img-heading">Bursztyn</h3>
+                            <img src="./dist/img/transparent.png" alt="Wino Bursztyn">
+                            <p class="catalog__box-card-img-info"> <i class="fas fa-angle-double-right"></i> Więcej informacji
+                            </p>
+                        </div>
+                        <div class="catalog__box-card-info">
+                            <h3 class="catalog__box-card-info-heading">Bursztyn</h3>
+                            <ul class="catalog__box-card-info-list">
+                                <li class="catalog__box-card-info-list-item">Białe</li>
+                                <li class="catalog__box-card-info-list-item">Półsłodkie</li>
+                                <li class="catalog__box-card-info-list-item">Odmiana: Solaris</li>
+                                <li class="catalog__box-card-info-list-item">Rocznik: 2020</li>
+                                <li class="catalog__box-card-info-list-item">Alkohol: 11%</li>
+                                <li class="catalog__box-card-info-list-item">Wyczuwalne aromaty brzoskwini, melonu i gruszki. Idealnie komponuje się z potrawami z owoców morza i ryb</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__box-card" onclick="void(0)">
+                        <div class="catalog__box-card-img">
+                            <h3 class="catalog__box-card-img-heading">Bursztyn</h3>
+                            <img src="./dist/img/transparent.png" alt="Wino Bursztyn">
+                            <p class="catalog__box-card-img-info"> <i class="fas fa-angle-double-right"></i> Więcej informacji
+                            </p>
+                        </div>
+                        <div class="catalog__box-card-info">
+                            <h3 class="catalog__box-card-info-heading">Bursztyn</h3>
+                            <ul class="catalog__box-card-info-list">
+                                <li class="catalog__box-card-info-list-item">Białe</li>
+                                <li class="catalog__box-card-info-list-item">Półsłodkie</li>
+                                <li class="catalog__box-card-info-list-item">Odmiana: Solaris</li>
+                                <li class="catalog__box-card-info-list-item">Rocznik: 2020</li>
+                                <li class="catalog__box-card-info-list-item">Alkohol: 11%</li>
+                                <li class="catalog__box-card-info-list-item">Wyczuwalne aromaty brzoskwini, melonu i gruszki. Idealnie komponuje się z potrawami z owoców morza i ryb</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__box-card" onclick="void(0)">
+                        <div class="catalog__box-card-img">
+                            <h3 class="catalog__box-card-img-heading">Bursztyn</h3>
+                            <img src="./dist/img/transparent.png" alt="Wino Bursztyn">
+                            <p class="catalog__box-card-img-info"> <i class="fas fa-angle-double-right"></i> Więcej informacji
+                            </p>
+                        </div>
+                        <div class="catalog__box-card-info">
+                            <h3 class="catalog__box-card-info-heading">Bursztyn</h3>
+                            <ul class="catalog__box-card-info-list">
+                                <li class="catalog__box-card-info-list-item">Białe</li>
+                                <li class="catalog__box-card-info-list-item">Półsłodkie</li>
+                                <li class="catalog__box-card-info-list-item">Odmiana: Solaris</li>
+                                <li class="catalog__box-card-info-list-item">Rocznik: 2020</li>
+                                <li class="catalog__box-card-info-list-item">Alkohol: 11%</li>
+                                <li class="catalog__box-card-info-list-item">Wyczuwalne aromaty brzoskwini, melonu i gruszki. Idealnie komponuje się z potrawami z owoców morza i ryb</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__box-card" onclick="void(0)">
+                        <div class="catalog__box-card-img">
+                            <h3 class="catalog__box-card-img-heading">Bursztyn</h3>
+                            <img src="./dist/img/transparent.png" alt="Wino Bursztyn">
+                            <p class="catalog__box-card-img-info"> <i class="fas fa-angle-double-right"></i> Więcej informacji
+                            </p>
+                        </div>
+                        <div class="catalog__box-card-info">
+                            <h3 class="catalog__box-card-info-heading">Bursztyn</h3>
+                            <ul class="catalog__box-card-info-list">
+                                <li class="catalog__box-card-info-list-item">Białe</li>
+                                <li class="catalog__box-card-info-list-item">Półsłodkie</li>
+                                <li class="catalog__box-card-info-list-item">Odmiana: Solaris</li>
+                                <li class="catalog__box-card-info-list-item">Rocznik: 2020</li>
+                                <li class="catalog__box-card-info-list-item">Alkohol: 11%</li>
+                                <li class="catalog__box-card-info-list-item">Wyczuwalne aromaty brzoskwini, melonu i gruszki. Idealnie komponuje się z potrawami z owoców morza i ryb</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__box-card" onclick="void(0)">
+                        <div class="catalog__box-card-img">
+                            <h3 class="catalog__box-card-img-heading">Bursztyn</h3>
+                            <img src="./dist/img/transparent.png" alt="Wino Bursztyn">
+                            <p class="catalog__box-card-img-info"> <i class="fas fa-angle-double-right"></i> Więcej informacji
+                            </p>
+                        </div>
+                        <div class="catalog__box-card-info">
+                            <h3 class="catalog__box-card-info-heading">Bursztyn</h3>
+                            <ul class="catalog__box-card-info-list">
+                                <li class="catalog__box-card-info-list-item">Białe</li>
+                                <li class="catalog__box-card-info-list-item">Półsłodkie</li>
+                                <li class="catalog__box-card-info-list-item">Odmiana: Solaris</li>
+                                <li class="catalog__box-card-info-list-item">Rocznik: 2020</li>
+                                <li class="catalog__box-card-info-list-item">Alkohol: 11%</li>
+                                <li class="catalog__box-card-info-list-item">Wyczuwalne aromaty brzoskwini, melonu i gruszki. Idealnie komponuje się z potrawami z owoców morza i ryb</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__box-card" onclick="void(0)">
+                        <div class="catalog__box-card-img">
+                            <h3 class="catalog__box-card-img-heading">Bursztyn</h3>
+                            <img src="./dist/img/transparent.png" alt="Wino Bursztyn">
+                            <p class="catalog__box-card-img-info"> <i class="fas fa-angle-double-right"></i> Więcej informacji
+                            </p>
+                        </div>
+                        <div class="catalog__box-card-info">
+                            <h3 class="catalog__box-card-info-heading">Bursztyn</h3>
+                            <ul class="catalog__box-card-info-list">
+                                <li class="catalog__box-card-info-list-item">Białe</li>
+                                <li class="catalog__box-card-info-list-item">Półsłodkie</li>
+                                <li class="catalog__box-card-info-list-item">Odmiana: Solaris</li>
+                                <li class="catalog__box-card-info-list-item">Rocznik: 2020</li>
+                                <li class="catalog__box-card-info-list-item">Alkohol: 11%</li>
+                                <li class="catalog__box-card-info-list-item">Wyczuwalne aromaty brzoskwini, melonu i gruszki. Idealnie komponuje się z potrawami z owoców morza i ryb</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__box-card" onclick="void(0)">
+                        <div class="catalog__box-card-img">
+                            <h3 class="catalog__box-card-img-heading">Bursztyn</h3>
+                            <img src="./dist/img/transparent.png" alt="Wino Bursztyn">
+                            <p class="catalog__box-card-img-info"> <i class="fas fa-angle-double-right"></i> Więcej informacji
+                            </p>
+                        </div>
+                        <div class="catalog__box-card-info">
+                            <h3 class="catalog__box-card-info-heading">Bursztyn</h3>
+                            <ul class="catalog__box-card-info-list">
+                                <li class="catalog__box-card-info-list-item">Białe</li>
+                                <li class="catalog__box-card-info-list-item">Półsłodkie</li>
+                                <li class="catalog__box-card-info-list-item">Odmiana: Solaris</li>
+                                <li class="catalog__box-card-info-list-item">Rocznik: 2020</li>
+                                <li class="catalog__box-card-info-list-item">Alkohol: 11%</li>
+                                <li class="catalog__box-card-info-list-item">Wyczuwalne aromaty brzoskwini, melonu i gruszki. Idealnie komponuje się z potrawami z owoców morza i ryb</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__box-card" onclick="void(0)">
+                        <div class="catalog__box-card-img">
+                            <h3 class="catalog__box-card-img-heading">Bursztyn</h3>
+                            <img src="./dist/img/transparent.png" alt="Wino Bursztyn">
+                            <p class="catalog__box-card-img-info"> <i class="fas fa-angle-double-right"></i> Więcej informacji
+                            </p>
+                        </div>
+                        <div class="catalog__box-card-info">
+                            <h3 class="catalog__box-card-info-heading">Bursztyn</h3>
+                            <ul class="catalog__box-card-info-list">
+                                <li class="catalog__box-card-info-list-item">Białe</li>
+                                <li class="catalog__box-card-info-list-item">Półsłodkie</li>
+                                <li class="catalog__box-card-info-list-item">Odmiana: Solaris</li>
+                                <li class="catalog__box-card-info-list-item">Rocznik: 2020</li>
+                                <li class="catalog__box-card-info-list-item">Alkohol: 11%</li>
+                                <li class="catalog__box-card-info-list-item">Wyczuwalne aromaty brzoskwini, melonu i gruszki. Idealnie komponuje się z potrawami z owoców morza i ryb</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">Kontakt</h2>
+                <div class="contact__info">
+                    <div class="contact__info-text">
+                        <div class="contact__info-text-name">
+                            <p class="contact__info-text-name-paragraph"><strong>Winnica Rubinowa</strong></p>
+                            <p class="contact__info-text-name-paragraph"><strong>Cezary Morek</strong></p>
+                        </div>
+                        <p>Ożarów Pierwszy 35</p>
+                        <p>24-300 Opole Lubelskie</p>
+                        <p>winnicarubinowa@gmail.com</p>
+                        <p>tel. 724 508 408</p>
+                        <p>tel. 695 445 001</p>
+                    </div>
+                    <div class="contact__info-map">
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Winnica%20Rubinowa&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://123movies-to.org "></a><br>
+                                <a href="https://www.embedgooglemap.net ">iframe google maps</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="contact__form-heading">Formularz kontaktowy</h3>
+
+                <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+                <form target="dummyframe" name="contactFormEmail" method="post" action="mail.php" class="contact__form">
+                    <div class="contact__form-top">
+                        <label class="contact__form-label">Imię i nazwisko:</label>
+                        <input type="text" name="userName" id="userName" required class="contact__form-input">
+                        <label class="contact__form-label">Adres e-mail:</label>
+                        <input type="email" name="userEmail" id="userEmail" required class="contact__form-input">
+                    </div>
+                    <label class="contact__form-label">Wiadomość:</label>
+                    <textarea name="userMessage" id="userMessage" required class="contact__form-textarea"></textarea>
+                    <div class="g-recaptcha" data-sitekey="6Lf7MDYgAAAAACJlDRjVAPvrp0PivnKOzYJrMeWA"></div>
+                    <input type="submit" name="send" class="contact__form-btn"></input>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+    <p class="footer__text"> &copy; <span class="footer-year"></span> | Winnica Rubinowa | Cezary Morek
+        <a href="https://www.facebook.com/WinnicaRubinowa/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+    </p>
+</footer>
+
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>
