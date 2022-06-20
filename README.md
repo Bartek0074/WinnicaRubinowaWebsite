@@ -1,5 +1,5 @@
 # WinnicaRubinowaWebsite
-##My first website developed to my friends.</br>
+## My first website developed to my friends.</br>
 
 While creating this website I was working with gulp, SASS (with BEM), JavaScript and some PHP.</br>
 
