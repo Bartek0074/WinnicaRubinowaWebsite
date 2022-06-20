@@ -32,7 +32,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #a6185f30;
+    background-color: #a6185f40;
     transition: opacity 1s ease;
     &__box {
         display: flex;
@@ -98,6 +98,7 @@ body {
     &--hidden {
         opacity: 0;
         z-index: -2000;
+        transition: opacity 1s ease, z-index 1s 1s;
     }
 }
 
