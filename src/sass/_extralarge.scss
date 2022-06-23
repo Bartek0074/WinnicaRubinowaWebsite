@@ -25,4 +25,14 @@
             }
         }
     }
+
+    // CATALOG
+
+    .catalog {
+        &__box {
+            &-card {
+                height: 600px;
+            }
+        }
+    }
 }

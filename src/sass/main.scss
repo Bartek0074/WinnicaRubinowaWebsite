@@ -149,9 +149,30 @@ body {
 .section-text {
     text-align: center;
     font-size: 1.6rem;
+    line-height: 2.1rem;
 }
 .section-padding {
-    padding: 3.6em 2em;
+    padding: 3.6em 1em;
+}
+.subsection-heading{
+    position: relative;
+    margin: 2.5em 0 1.5em;
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 2px;
+}
+.subsection-heading::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 60px;
+    background-color: #a6185f;
 }
 .link {
     text-decoration: none;
@@ -346,12 +367,14 @@ header {
         position: absolute;
         top: 50%;
         left: 50%;
+        width: 80%;
+        max-width: 900px;
         transform: translate(-50%, -50%);
         font-family: 'Marcellus', serif;
         &-text {
             font-size: 1.8rem;
             text-align: center;
-            margin-bottom: 2em;
+            margin-bottom: 1.5em;
         }
         &-author {
             font-size: 1.6rem;
@@ -400,6 +423,7 @@ header {
                 font-size: 2.4rem;
             }
             &-text {
+                line-height: 2.2rem;
                 text-align: justify;
                 margin-bottom: 0.5em;
                 font-size: 1.5rem;
@@ -456,19 +480,19 @@ header {
                     background-image: url('../../dist/img/gallery1.jpg');
                 }
                 &--second {
-                    background-image: url('../../dist/img/gallery2.jpg');
+                    background-image: url('../../dist/img/gallery2.png');
                 }
                 &--third {
-                    background-image: url('../../dist/img/gallery3.jpg');
+                    background-image: url('../../dist/img/gallery3.png');
                 }
                 &--fourth {
                     background-image: url('../../dist/img/gallery4.jpg');
                 }
                 &--fifth {
-                    background-image: url('../../dist/img/gallery5.jpg');
+                    background-image: url('../../dist/img/gallery5.png');
                 }
                 &--sixth {
-                    background-image: url('../../dist/img/gallery6.jpg');
+                    background-image: url('../../dist/img/gallery6.png');
                 }
             }
         }
@@ -480,14 +504,13 @@ header {
 .catalog {
     background-color: #ddd;
     &__box {
-        margin-top: 4em;
         display: grid;
         grid-template-rows: repeat(8, 1fr);
         gap: 2em;
         &-card {
             position: relative;
             height: 550px;
-            color: white;
+            color: rgb(44, 23, 34);
             text-align: center;
             perspective: 1000px;
             &-img {
@@ -497,7 +520,7 @@ header {
                 background-size: cover;
                 background-position: center;
                 transition: transform 1s, opacity 1s;
-                background-image: radial-gradient(circle, rgba(122, 14, 68, 0.7) 0%, rgb(189, 72, 103) 100%), url('../../dist/img/card-img.jpg');
+                background-image: radial-gradient(circle, rgb(245, 240, 242) 15%, rgba(107, 13, 60, 0.6) 100%);
                 &-heading {
                     position: absolute;
                     left: 50%;
@@ -537,7 +560,7 @@ header {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                background-image: radial-gradient(circle at top right, rgb(189, 79, 108) 100%, rgb(90, 10, 50) 100%);
+                background-image: radial-gradient(circle, rgb(245, 240, 242) 15%, rgba(107, 13, 60, 0.6) 100%);
                 border-radius: 8px;
                 opacity: 0;
                 transform: rotateY(180deg);
@@ -559,7 +582,7 @@ header {
                     &-item {
                         padding: 1em;
                         font-size: 1.6rem;
-                        border-bottom: 1px solid #eee;
+                        border-bottom: 1px solid rgb(44, 23, 34);
                         &:last-child {
                             border-bottom: none;
                         }
