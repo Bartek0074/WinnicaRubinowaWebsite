@@ -601,6 +601,9 @@ header {
             }
         }
     }
+    &__box:nth-of-type(2){
+            grid-template-rows: repeat(1, 1fr);
+        }
 }
 
 // CONTACT
