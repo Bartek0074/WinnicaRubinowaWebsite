@@ -348,6 +348,9 @@ header {
             font-family: 'Marcellus', serif;
             letter-spacing: 2px;
             word-spacing: 2px;
+            span{
+                font-size: 4.8rem;
+            }
         }
     }
 }
@@ -358,6 +361,7 @@ header {
     overflow: hidden;
     position: relative;
     height: 50vh;
+    min-height: 350px;
     background-image: linear-gradient(45deg, rgba(189, 79, 108, 0.75), rgba(90, 10, 50, 0.75)), url('../../dist/img/paper-640.jpg');
     background-size: cover;
     background-position: center;
@@ -365,7 +369,7 @@ header {
     color: #eee;
     &__info {
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 50%;
         width: 80%;
         max-width: 900px;
@@ -384,6 +388,7 @@ header {
     }
 }
 
+
 // ABOUT
 
 .about {
@@ -393,6 +398,9 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    .white-block-left{
+        background-color: #ddd;
+    }
     .section-heading {
         padding-top: 1.5em;
         color: white;
@@ -436,6 +444,8 @@ header {
 // GALLERY
 
 .gallery {
+    background-color: #ddd;
+
     &__box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -502,7 +512,6 @@ header {
 // CATALOG
 
 .catalog {
-    background-color: #ddd;
     &__box {
         display: grid;
         grid-template-rows: repeat(8, 1fr);
@@ -510,7 +519,7 @@ header {
         &-card {
             position: relative;
             height: 550px;
-            color: rgb(44, 23, 34);
+            color: #840d48;
             text-align: center;
             perspective: 1000px;
             &-img {
@@ -520,7 +529,7 @@ header {
                 background-size: cover;
                 background-position: center;
                 transition: transform 1s, opacity 1s;
-                background-image: radial-gradient(circle, rgb(245, 240, 242) 15%, rgba(107, 13, 60, 0.6) 100%);
+                background-image: radial-gradient(circle, rgb(245, 240, 242) 25%, rgba(135, 125, 130, 0.6) 100%);
                 &-heading {
                     position: absolute;
                     left: 50%;
@@ -560,7 +569,7 @@ header {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                background-image: radial-gradient(circle, rgb(245, 240, 242) 15%, rgba(107, 13, 60, 0.6) 100%);
+                background-image: radial-gradient(circle, rgb(245, 240, 242) 25%, rgba(135, 125, 130, 0.6) 100%);
                 border-radius: 8px;
                 opacity: 0;
                 transform: rotateY(180deg);
@@ -582,7 +591,7 @@ header {
                     &-item {
                         padding: 1em;
                         font-size: 1.6rem;
-                        border-bottom: 1px solid rgb(44, 23, 34);
+                        border-bottom: 1px solid #840d48;
                         &:last-child {
                             border-bottom: none;
                         }
@@ -600,6 +609,37 @@ header {
                 }
             }
         }
+        &-card--unavailable {
+            .catalog__box-card-img {
+                &-heading{
+                    z-index: 1;
+                }
+                &-shadow{
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 8px;
+                    background-color: rgba(255, 255, 255, 0.3);
+                }
+                
+                &-info{
+                    z-index: 1;
+                    color: rgb(219, 19, 19);
+                    i{
+                        font-size: 1.6rem;
+                    }
+                }  
+            }
+            &:hover {
+                .catalog__box-card-img {
+                    transform: rotateY(0deg);
+                    opacity: 1;
+                }
+            }
+        }
     }
     &__box:nth-of-type(2){
             grid-template-rows: repeat(1, 1fr);
@@ -609,6 +649,7 @@ header {
 // CONTACT
 
 .contact {
+    background-color: #ddd;
     &__info {
         margin-top: 4em;
         display: flex;
@@ -624,6 +665,12 @@ header {
                 &-paragraph {
                     text-align: center;
                     font-size: 2rem;
+                }
+            }
+            &-address{
+                &-paragraph{
+                    text-align: center;
+                    font-size: 1.8rem;
                 }
             }
             p {

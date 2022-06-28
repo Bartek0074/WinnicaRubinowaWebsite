@@ -18,7 +18,7 @@ if(!empty($_POST["send"])) {
 			$userName = $_POST["userName"];
 			$userEmail = $_POST["userEmail"];
 			$userMessage = $_POST["userMessage"];
-			$toEmail = "bartekDO123@gmail.com";
+			$toEmail = "winnicarubinowa@gmail.com";
 
 			$subject = "Nowa wiadomość od: " . $userName . " <" . $userEmail . ">";
 
@@ -41,11 +41,11 @@ if(!empty($_POST["send"])) {
 			$mailTo = mail($toEmail, $subject, $message, $headers);
 			$mailTo = mail($userEmail, $subjectFrom, $messageFrom, "From: Winnica Rubinowa <winnicarubinowa@gmail.com>");
 
-			$successMessage = "Wiadomość została wysłana Potwierdzenie doręczenia wiadomości zostało wysłane na Twój adres e-mail.";
+			$successMessage = "Wiadomość została wysłana. Potwierdzenie doręczenia wiadomości zostało wysłane na Twój adres e-mail. Jeżeli wiadomości nie ma w skrzynce odbiorczej prosimy o sprawdzenie folderu SPAM.";
 			echo "<script type='text/javascript'>alert('$successMessage');</script>";
 		}
 		else{
-			$failureMessage = "Wiadomość NIE została wysłana. Potwierdź, że nie jesteś robotem";
+			$failureMessage = "Wiadomość NIE została wysłana. Potwierdź, że nie jesteś robotem.";
 			echo "<script type='text/javascript'>alert('$failureMessage');</script>";
 		}
 	}
