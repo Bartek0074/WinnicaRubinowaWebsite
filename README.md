@@ -4,4 +4,4 @@
 
 While creating this website I was working with gulp, SASS (with BEM), JavaScript and some PHP.</br>
 
-You can check this website on https://winnicarubinowa.pl</br>
+You can check this website on https://winnicarubinowa.pl or https://bartek0074.github.io/WinnicaRubinowaWebsite/</br>
