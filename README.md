@@ -1,6 +1,6 @@
 # WinnicaRubinowaWebsite
 
-My first website developed to my friends.</br>
+My first website developed to my friends!</br>
 
 ⚙ Technology used:
 - HTML
