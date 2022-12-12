@@ -1,14 +1,13 @@
 # WinnicaRubinowaWebsite
 
-## My first website developed to my friends!</br>
+My first website developed for a vineyard. 
 
-### You can check this website <a href="https://winnicarubinowa.pl/">here</a>
+Live [here](https://winnicarubinowa.pl/).
 
+## Technologies
 
-⚙ Technology used:
-- HTML
-- SASS
-- BEM
-- JavaScript
-- some PHP
-- Gulp
+- HTML,
+- SASS,
+- JavaScript,
+- some PHP,
+- Gulp.
