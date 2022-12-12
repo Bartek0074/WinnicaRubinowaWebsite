@@ -7,7 +7,8 @@ Live [here](https://winnicarubinowa.pl/).
 ## Technologies
 
 - HTML,
-- SASS,
 - JavaScript,
 - some PHP,
+- SASS,
+- RWD,
 - Gulp.
