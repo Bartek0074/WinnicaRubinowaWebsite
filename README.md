@@ -1,14 +1,16 @@
-# WinnicaRubinowaWebsite
+# WinnicaRubinowaWebsiteNew
 
-My first website developed for a vineyard. 
+My debut website! Made for my family's vineyard. Explore their wines and events here.
 
-Live [here](https://winnicarubinowa.pl/).
+This is old version. [Link](https://github.com/Bartek0074/WinnicaRubinowaWebsiteNew/) to new version.
+
+## Demo
+
+Live Demo [here](https://bartek0074.github.io/WinnicaRubinowaWebsite/).
 
 ## Technologies
 
-- HTML,
 - JavaScript,
-- some PHP,
+- PHP,
 - SASS,
-- RWD,
 - Gulp.
