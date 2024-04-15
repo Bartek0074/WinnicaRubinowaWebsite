@@ -1,4 +1,4 @@
-# WinnicaRubinowaWebsiteNew
+# WinnicaRubinowaWebsite
 
 My debut website! Made for my family's vineyard. Explore their wines and events here.
 
